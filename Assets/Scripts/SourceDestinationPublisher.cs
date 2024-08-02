@@ -38,13 +38,9 @@ public class SourceDestinationPublisher : MonoBehaviour
     {
         // Get ROS connection static instance
         m_Ros = ROSConnection.GetOrCreateInstance();
-
         // Subscribe to joint_state topic
         m_Ros.Subscribe<JointStates>(m_TopicName, getMessageJointState);
-
-        m_JointArticulationBodies = new UrdfJointRevolute[k_NumRobotJoints];
-
-        Debug.Log("N-Joints: " + k_NumRobotJoints);       
+        m_JointArticulationBodies = new UrdfJointRevolute[k_NumRobotJoints];     
         
 
     void getMessageJointState(JointStates jointPosMsg)
@@ -54,8 +50,6 @@ public class SourceDestinationPublisher : MonoBehaviour
     
     IEnumerator SetJointValues(JointStates message)
     {
-        Debug.Log("Message Length: " + message.name.Length.ToString());
-        Debug.Log("Message Length: " + message.name);
 
         for (int i = 0; i < message.name.Length; i++)
         {
