@@ -9149,7 +9149,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TopicName: /joint_states
-  m_myCobot280: {fileID: 0}
   robotJoints:
   - {fileID: 2079934138}
   - {fileID: 1583791588}
