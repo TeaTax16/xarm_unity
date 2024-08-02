@@ -1,15 +1,12 @@
 using System;
 using RosMessageTypes.Geometry;
-//using RosMessageTypes.MycobotInterfaces;
 using Unity.Robotics.ROSTCPConnector;
 using Unity.Robotics.ROSTCPConnector.ROSGeometry;
 using Unity.Robotics.UrdfImporter;
 using UnityEngine;
-//using ShoulderPositionMessage = RosMessageTypes.Std.Float32MultiArrayMsg;
 using JointStates = RosMessageTypes.Sensor.JointStateMsg;
 
 using System.Collections;
-
 
 public class SourceDestinationPublisher : MonoBehaviour
 {
@@ -22,8 +19,6 @@ public class SourceDestinationPublisher : MonoBehaviour
     [SerializeField]
     string m_TopicName = "/joint_states";
 
-    [SerializeField]
-    GameObject m_myCobot280;
     [SerializeField] private ArticulationBody[] robotJoints = new ArticulationBody[k_NumRobotJoints];
     
     //[SerializeField]
@@ -46,24 +41,14 @@ public class SourceDestinationPublisher : MonoBehaviour
 
         // Subscribe to joint_state topic
         m_Ros.Subscribe<JointStates>(m_TopicName, getMessageJointState);
-        
-        //m_Ros.RegisterPublisher<MycobotAnglesMsg>(m_TopicName);
 
         m_JointArticulationBodies = new UrdfJointRevolute[k_NumRobotJoints];
 
-        Debug.Log("N-Joints: " + k_NumRobotJoints);
-        //Debug.Log(m_myCobot280.transform.Find(LinkNames[0]));
+        Debug.Log("N-Joints: " + k_NumRobotJoints);       
         
-        
-    void Update()
-    {
-               
-        
-    }
 
     void getMessageJointState(JointStates jointPosMsg)
     {
-        //Debug.Log(shoulderPosMsg.data);
        StartCoroutine(SetJointValues(jointPosMsg));
     }
     
@@ -79,7 +64,6 @@ public class SourceDestinationPublisher : MonoBehaviour
             float jointAngle = (float)(message.position[i]) * Mathf.Rad2Deg;            
             joint1XDrive.target = jointAngle;
             robotJoints[i].xDrive = joint1XDrive;            
-            //Debug.Log(jointAngle.ToString("F4") + " " + i.ToString());
         }
  
         yield return new WaitForSeconds(0.5f);
