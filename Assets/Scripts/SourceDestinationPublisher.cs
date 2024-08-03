@@ -10,10 +10,10 @@ using System.Collections;
 
 public class SourceDestinationPublisher : MonoBehaviour
 {
-    const int k_NumRobotJoints = 7;
+    const int k_NumRobotJoints = 6;
 
     public static readonly string[] LinkNames =
-        { "/joint1", "/joint2", "/joint3", "/joint4", "/joint5", "/joint6", "/joint6_flange" };
+        { "/joint1", "/joint2", "/joint3", "/joint4", "/joint5", "/joint6"};
 
     // Variables required for ROS communication
     [SerializeField]
