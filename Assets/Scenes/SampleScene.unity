@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665664095}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -1, y: 0.4, z: 0}
+  m_LocalPosition: {x: -1, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1327,7 +1327,7 @@ ArticulationBody:
   m_GameObject: {fileID: 777659798}
   m_Enabled: 1
   m_Mass: 2.16
-  m_ParentAnchorPosition: {x: 0, y: 0.267, z: 0}
+  m_ParentAnchorPosition: {x: 0, y: 0.26699996, z: 0}
   m_ParentAnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
@@ -1733,7 +1733,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1194694053}
   m_Enabled: 1
   m_Mass: 1.115
-  m_ParentAnchorPosition: {x: -0.3425, y: 0.000000007450581, z: 0.0775}
+  m_ParentAnchorPosition: {x: -0.34249997, y: 0.000000007450581, z: 0.0775}
   m_ParentAnchorRotation: {x: 0, y: 0, z: 0.0000018179417, w: 1.0000001}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
@@ -2217,7 +2217,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1265565799}
   m_Enabled: 1
   m_Mass: 1.71
-  m_ParentAnchorPosition: {x: 0, y: 0, z: 0}
+  m_ParentAnchorPosition: {x: 0, y: -0.000000029802322, z: 0}
   m_ParentAnchorRotation: {x: 0, y: 0, z: 0.0000018179417, w: 1.0000001}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
@@ -3128,7 +3128,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1550637014}
   m_Enabled: 1
   m_Mass: 1.275
-  m_ParentAnchorPosition: {x: 0, y: 0, z: 0}
+  m_ParentAnchorPosition: {x: -1.10134124e-13, y: -0.000000029802322, z: 0}
   m_ParentAnchorRotation: {x: 0, y: 0, z: -1.0000001, w: -0.0000018179417}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
@@ -3262,7 +3262,7 @@ ArticulationBody:
   m_GameObject: {fileID: 1588094831}
   m_Enabled: 1
   m_Mass: 0.1096
-  m_ParentAnchorPosition: {x: -0.097, y: -0.000000007450581, z: 0.07599999}
+  m_ParentAnchorPosition: {x: -0.09699997, y: -0.000000007450581, z: 0.07599999}
   m_ParentAnchorRotation: {x: 0, y: 0, z: 0.0000018179417, w: 1.0000001}
   m_AnchorPosition: {x: 0, y: 0, z: 0}
   m_AnchorRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
