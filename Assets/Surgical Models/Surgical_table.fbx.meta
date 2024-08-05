@@ -1,34 +1,59 @@
 fileFormatVersion: 2
-guid: 04950954eb81aa54eacc053605b18ba3
-timeCreated: 1580990884
-licenseType: Store
+guid: 5b98479245e80dc44b7ec71fe648e338
 ModelImporter:
-  serializedVersion: 21
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Locker_1
-    100004: Locker_2
-    100006: Locker_3
-    400000: //RootNode
-    400002: Locker_1
-    400004: Locker_2
-    400006: Locker_3
-    2300000: //RootNode
-    2300002: Locker_1
-    2300004: Locker_2
-    2300006: Locker_3
-    3300000: //RootNode
-    3300002: Locker_1
-    3300004: Locker_2
-    3300006: Locker_3
-    4300000: Locker
-    4300002: Locker_3
-    4300004: Locker_2
-    4300006: Locker_1
+  serializedVersion: 21100
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Cover
+  - first:
+      1: 100002
+    second: Patient
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      4: 400000
+    second: Cover
+  - first:
+      4: 400002
+    second: Patient
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      23: 2300000
+    second: Cover
+  - first:
+      23: 2300002
+    second: Patient
+  - first:
+      23: 2300004
+    second: //RootNode
+  - first:
+      33: 3300000
+    second: Cover
+  - first:
+      33: 3300002
+    second: Patient
+  - first:
+      33: 3300004
+    second: //RootNode
+  - first:
+      43: 4300000
+    second: Surgical_bed
+  - first:
+      43: 4300002
+    second: Cover
+  - first:
+      43: 4300004
+    second: Patient
+  externalObjects: {}
   materials:
-    importMaterials: 1
-    materialName: 1
-    materialSearch: 1
+    materialImportMode: 1
+    materialName: 2
+    materialSearch: 2
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -41,6 +66,8 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -55,19 +82,31 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
@@ -75,10 +114,13 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -88,14 +130,17 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
-    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
